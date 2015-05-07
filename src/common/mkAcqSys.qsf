@@ -104,8 +104,8 @@ set_location_assignment PIN_U12 -to LED[2]
 set_location_assignment PIN_V13 -to LED[1]
 set_location_assignment PIN_U13 -to LED[0]
 
-set_global_assignment -name SEARCH_PATH "/opt/bluespec/Bluespec-2014.06.A/lib/Verilog.Quartus"
-set_global_assignment -name SEARCH_PATH "/opt/bluespec/Bluespec-2014.06.A/lib/Verilog"
+set_global_assignment -name SEARCH_PATH "${BLUESPECHOME}/lib/Verilog.Quartus"
+set_global_assignment -name SEARCH_PATH "${BLUESPECHOME}/lib/Verilog"
 set_location_assignment PIN_A12 -to DAC_NLDAC
 set_location_assignment PIN_A11 -to DAC_SCLK
 set_location_assignment PIN_B10 -to DAC_NCS

@@ -1,7 +1,11 @@
 BSCFLAGS=-no-lift -aggressive-conditions
 BSCHARDFLAGS=-opt-undetermined-vals -unspecified-to X
 BSVPATH=../common:+
-all:
+
+include ../common/quartus.mk
+
+all: mkAcqSys.v pof
+mkAcqSys.v:
 	mkdir -p obj
 	bsc -u -bdir obj -p $(BSVPATH) -show-schedule -verilog $(BSCFLAGS) $(BSCHARDFLAGS) AcqSys.bsv
 emu:
