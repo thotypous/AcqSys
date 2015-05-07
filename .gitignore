@@ -1,0 +1,16 @@
+# Software
+*.so
+*.o
+/software/acqstim
+
+# Bluespec
+*.bo
+mk*.v
+mk*.sched
+
+# Quartus II
+PLLJ_PLLSPE_INFO.txt
+*.sopcinfo
+db
+incremental_db
+output_files
